@@ -22,7 +22,7 @@ public class ImcService {
             case "Abaixo do peso" -> "fitness";
             case "Peso normal"    -> "fitness";
             case "Sobrepeso"      -> "low carb";
-            default               -> "vegano";
+            default               -> "Vegano";
         };
     }
 }
