@@ -64,6 +64,7 @@ public class PratoService {
         prato.setCalorias(dto.calorias());
         prato.setQuantidade(dto.quantidade());
         prato.setUnidadeMedida(dto.unidadeMedida());
+        prato.setEstoque(dto.estoque()); // NOVO
 
         Prato atualizado = pratoRepository.save(prato);
         return toDTO(atualizado);
@@ -105,6 +106,7 @@ public class PratoService {
         prato.setCalorias(dto.calorias());
         prato.setQuantidade(dto.quantidade());
         prato.setUnidadeMedida(dto.unidadeMedida());
+        prato.setEstoque(dto.estoque()); // NOVO
         return prato;
     }
 
@@ -117,7 +119,8 @@ public class PratoService {
                 prato.getCategoria(),
                 prato.getCalorias(),
                 prato.getQuantidade(),
-                prato.getUnidadeMedida()
+                prato.getUnidadeMedida(),
+                prato.getEstoque() // NOVO
         );
     }
 }
