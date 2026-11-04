@@ -20,12 +20,11 @@ public class Prato {
     private String unidadeMedida;
     private Integer estoque;
 
-
     public Prato() {
     }
 
     public Prato(Long id, String nome, String descricao, BigDecimal valor,
-                 String categoria, Integer calorias, Double quantidade, String unidadeMedida) {
+            String categoria, Integer calorias, Double quantidade, String unidadeMedida) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -95,19 +94,17 @@ public class Prato {
     public String getUnidadeMedida() {
         return unidadeMedida;
     }
-    
+
     public void setUnidadeMedida(String unidadeMedida) {
         this.unidadeMedida = unidadeMedida;
     }
 
-      public Integer getEstoque() {
-      return estoque;
-  }
+    public Integer getEstoque() {
+        return estoque;
+    }
 
     public void setEstoque(Integer estoque) {
-      this.estoque = estoque;
-  }
-
-
+        this.estoque = estoque;
+    }
 
 }

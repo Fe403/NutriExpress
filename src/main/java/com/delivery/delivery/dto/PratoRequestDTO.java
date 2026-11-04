@@ -3,6 +3,7 @@ package com.delivery.delivery.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
 
 import java.math.BigDecimal;
 
@@ -30,6 +31,10 @@ public record PratoRequestDTO(
         Double quantidade,
 
         @NotBlank(message = "A unidade de medida e obrigatoria")
-        String unidadeMedida
+        String unidadeMedida,
+
+        @NotNull(message = "O estoque e obrigatorio")
+        @PositiveOrZero(message = "O estoque nao pode ser negativo")
+        Integer estoque
 ) {
 }
