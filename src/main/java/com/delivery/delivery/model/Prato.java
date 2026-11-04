@@ -18,6 +18,8 @@ public class Prato {
     private Integer calorias;
     private Double quantidade;
     private String unidadeMedida;
+    private Integer estoque;
+
 
     public Prato() {
     }
@@ -93,8 +95,19 @@ public class Prato {
     public String getUnidadeMedida() {
         return unidadeMedida;
     }
-
+    
     public void setUnidadeMedida(String unidadeMedida) {
         this.unidadeMedida = unidadeMedida;
     }
+
+      public Integer getEstoque() {
+      return estoque;
+  }
+
+    public void setEstoque(Integer estoque) {
+      this.estoque = estoque;
+  }
+
+
+
 }
